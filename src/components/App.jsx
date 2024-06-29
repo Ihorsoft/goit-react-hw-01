@@ -11,7 +11,10 @@ import MessageList from "./MessageList";
 import { Alert } from "./Alert";
 import { Profile } from "./Profile";
 import userData from "../userData1.json";
+import friends from "../friends.json";
+import { FriendList } from "./FriendList";
 
+console.log("Type friens is :", typeof friends);
 // const userData = JSON.parse(userData1);
 
 //const message = ["goodbay", "thefinish"];
@@ -42,6 +45,8 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
+
+      <FriendList friends={friends} />
     </div>
   );
 };
