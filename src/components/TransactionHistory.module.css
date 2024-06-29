@@ -17,10 +17,6 @@ thead {
   color: #fff;
 }
 
-/* tbody td:nth-child(1) {
-  width: 13%;
-} */
-
 thead th:nth-child(2) {
   width: 33%;
 }
@@ -49,12 +45,6 @@ tbody {
   text-align: center;
 }
 
-td {
-}
-
-/* tr:nth-child(even) {
-  background-color: #f2f2f2;
-} */
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
