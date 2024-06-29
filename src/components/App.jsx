@@ -5,6 +5,7 @@ import React from "react";
 //import reactLogo from "./assets/react.svg";
 //import viteLogo from "/vite.svg";
 import "./App.css";
+import "./TransactionHistory.module.css";
 import Product from "./Product";
 import Mailbox from "./Mailbox";
 import MessageList from "./MessageList";
@@ -12,7 +13,9 @@ import { Alert } from "./Alert";
 import { Profile } from "./Profile";
 import userData from "../userData1.json";
 import friends from "../friends.json";
+import transactions from "../transactions.json";
 import { FriendList } from "./FriendList";
+import { TransactionHistory } from "./TransactionHistory";
 
 console.log("Type friens is :", typeof friends);
 // const userData = JSON.parse(userData1);
@@ -47,6 +50,8 @@ const App = () => {
       />
 
       <FriendList friends={friends} />
+
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
