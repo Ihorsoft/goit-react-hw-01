@@ -12,9 +12,9 @@ export const Profile = ({
       <div className={s.userCard}>
         <div>
           <img className={s.imageWrapper} src={image} alt="User avatar" />
-          <p>
-            <h2>{name}</h2>
-          </p>
+
+          <h2>{name}</h2>
+
           <p>
             <BiAt />
             {tag}

@@ -5,9 +5,8 @@ export const FriendListItem = ({ item }) => {
   return (
     <div>
       <img src={item.avatar} alt={item.avatar} width="48" />
-      <p className={s1.nameitem}>
-        <h2 className={s1.nameitem}>{item.name}</h2>
-      </p>
+
+      <h2 className={s1.nameitem}>{item.name}</h2>
 
       {item.isOnline ? (
         <Alertcolor variant="success">

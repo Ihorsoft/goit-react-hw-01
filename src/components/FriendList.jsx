@@ -6,10 +6,6 @@ export const FriendList = ({ friends }) => {
     <div className={s2.wripper}>
       <ul className={s2.friendlist}>
         {friends.map((friends, index) => {
-          // console.log("Item FriendLIst :", friends);
-          // const itemf = { friends };
-          // console.log("ItemF FriendList  :", itemf);
-
           return (
             <div key={friends.id}>
               <li className={s2.frienditem}>
