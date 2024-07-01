@@ -1,26 +1,23 @@
 import { Alertcolor } from "./Alertcolor";
+import s1 from "./FriendList.module.css";
 
 export const FriendListItem = ({ item }) => {
-  // export const FriendListItem = ({ avatar, name, isOnline, id }) => {
-  // console.log("avatar is :", item.avatar);
   return (
     <div>
       <img src={item.avatar} alt={item.avatar} width="48" />
-      <p>{item.name}</p>
+      <p className={s1.nameitem}>
+        <h2 className={s1.nameitem}>{item.name}</h2>
+      </p>
 
       {item.isOnline ? (
         <Alertcolor variant="success">
-          <p>Online</p>
+          <p className={s1.statusitem}>Online</p>
         </Alertcolor>
       ) : (
         <Alertcolor variant="error">
-          <p>Offline</p>
+          <p className={s1.statusitem}>Offline</p>
         </Alertcolor>
       )}
-
-      {/* <img src={avatar} alt={avatar} width="48" />
-      <p>{name}</p>
-      <p>{isOnline}</p> */}
     </div>
   );
 };

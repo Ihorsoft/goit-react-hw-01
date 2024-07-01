@@ -1,3 +1,5 @@
+import { BiAt } from "react-icons/bi";
+import s from "./Profile.module.css";
 export const Profile = ({
   name = "Petra Marica",
   tag = "@pmarica",
@@ -6,28 +8,41 @@ export const Profile = ({
   stats = { folowers: 1, views: 1, likes: 1 },
 }) => {
   return (
-    <div>
-      <div>
-        <img src={image} alt="User avatar" />
-        <p>{name}</p>
-        <p>{tag}</p>
-        <p>{location}</p>
-      </div>
+    <div className={s.wripper}>
+      <div className={s.userCard}>
+        <div>
+          <img className={s.imageWrapper} src={image} alt="User avatar" />
+          <p>
+            <h2>{name}</h2>
+          </p>
+          <p>
+            <BiAt />
+            {tag}
+          </p>
+          <p>{location}</p>
+        </div>
 
-      <ul>
-        <li>
-          <span>Followers</span>
-          <span>{stats.followers}</span>
-        </li>
-        <li>
-          <span>Views</span>
-          <span>{stats.views}</span>
-        </li>
-        <li>
-          <span>Likes</span>
-          <span>{stats.likes}</span>
-        </li>
-      </ul>
+        <ul className={s.content}>
+          <li className={s.carditem}>
+            <div className={s.itemitem}>
+              <span>Followers</span>
+            </div>
+            <span>{stats.followers}</span>
+          </li>
+          <li className={s.carditem}>
+            <div>
+              <span>Views</span>
+            </div>
+            <span>{stats.views}</span>
+          </li>
+          <li className={s.carditem}>
+            <div>
+              <span>Likes</span>
+            </div>
+            <span>{stats.likes}</span>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 const MessageList = ({ messages }) => {
-  // console.log(message.join());
   return (
     <div>
       {messages.map((item, index) => {

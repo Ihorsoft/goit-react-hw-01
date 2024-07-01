@@ -1,0 +1,30 @@
+.wripper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+}
+.friendlist {
+  display: flex;
+  width: 700px;
+  flex-wrap: nowrap;
+  gap: 20px;
+  height: 100px;
+  margin-bottom: 280px;
+  justify-content: space-between;
+  padding-left: 0px;
+}
+
+.frienditem {
+  border: 1px solid black;
+  border-radius: 20px;
+  flex: 1 1 33em;
+  padding-top: 20px;
+}
+.statusitem {
+  margin: 0px;
+  padding-top: 0px;
+}
+.nameitem {
+  margin-bottom: 0px;
+}

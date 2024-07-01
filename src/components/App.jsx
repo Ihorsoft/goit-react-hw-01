@@ -1,9 +1,5 @@
 import React from "react";
-// import ReactDOM from "react-dom/client";
 
-//import { useState } from "react";
-//import reactLogo from "./assets/react.svg";
-//import viteLogo from "/vite.svg";
 import "./App.css";
 import "./TransactionHistory.css";
 import Product from "./Product";
@@ -16,21 +12,21 @@ import friends from "../friends.json";
 import transactions from "../transactions.json";
 import { FriendList } from "./FriendList";
 import { TransactionHistory } from "./TransactionHistory";
+import clsx from "clsx";
+import s from "./Profile.module.css";
 
-// console.log("Type friens is :", typeof friends);
-// const userData = JSON.parse(userData1);
-
-//const message = ["goodbay", "thefinish"];
+const variant1 = "Houme";
+const outlined1 = false;
+const elevanted1 = "2";
+console.log(
+  clsx(variant1, { "is-outlined": outlined1, "is-elevanted": elevanted1 })
+);
 
 const App = () => {
   return (
     <div>
-      <h1>Best selling</h1>
-      <Product
-        name="Tacos With Lime"
-        // imgUrl="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?dpr=2&h=480&w=640"
-        price={10.99}
-      />
+      {/*  <h1>Best selling</h1>
+      <Product name="Tacos With Lime" price={10.99} />
       <Product
         name="Fries and Burger"
         imgUrl="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?dpr=2&h=480&w=640"
@@ -38,8 +34,7 @@ const App = () => {
       />
       <Alert variant="info">
         <Mailbox username="Ivan" messages={["goodbay", "thefinish"]} />
-      </Alert>
-      {/* <Mailbox username="Ivan" messages={["goodbay", "thefinish"]} /> */}
+      </Alert> */}
 
       <Profile
         name={userData.username}
